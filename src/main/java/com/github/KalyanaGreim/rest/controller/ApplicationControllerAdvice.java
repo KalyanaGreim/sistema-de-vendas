@@ -1,5 +1,6 @@
 package com.github.KalyanaGreim.rest.controller;
 
+import com.github.KalyanaGreim.exception.PedidoNaoEncontradoException;
 import com.github.KalyanaGreim.exception.RegraNegocioException;
 import com.github.KalyanaGreim.rest.ApiErrors;
 import org.springframework.http.HttpStatus;
@@ -16,5 +17,11 @@ public class ApplicationControllerAdvice {
     public ApiErrors handleRegraNegocioException(RegraNegocioException exception){
         String mensagemErro = exception.getMessage();
         return new ApiErrors(mensagemErro);
+    }
+
+    @ExceptionHandler(PedidoNaoEncontradoException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ApiErrors handlePedidoNotFoundException(PedidoNaoEncontradoException exception){
+        return new ApiErrors(exception.getMessage());
     }
 }

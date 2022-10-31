@@ -9,6 +9,7 @@ import com.github.KalyanaGreim.domain.repository.Clientes;
 import com.github.KalyanaGreim.domain.repository.ItemsPedido;
 import com.github.KalyanaGreim.domain.repository.Pedidos;
 import com.github.KalyanaGreim.domain.repository.Produtos;
+import com.github.KalyanaGreim.exception.PedidoNaoEncontradoException;
 import com.github.KalyanaGreim.exception.RegraNegocioException;
 import com.github.KalyanaGreim.rest.dto.ItemPedidoDTO;
 import com.github.KalyanaGreim.rest.dto.PedidoDTO;
@@ -55,6 +56,16 @@ public class PedidoServiceImpl implements PedidoService {
     @Override
     public Optional<Pedido> obterPedidoCompleto(Integer id) {
         return repository.findByIdFetchItens(id);
+    }
+
+    @Override
+    @Transactional
+    public void atualizaStatus(Integer id, StatusPedido statusPedido) {
+        repository.findById(id)
+                .map(pedido -> {
+            pedido.setStatus(statusPedido);
+            return repository.save(pedido);
+        }).orElseThrow( () -> new PedidoNaoEncontradoException() );
     }
 
 

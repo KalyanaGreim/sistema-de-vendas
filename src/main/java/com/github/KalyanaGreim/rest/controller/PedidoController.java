@@ -2,6 +2,8 @@ package com.github.KalyanaGreim.rest.controller;
 
 import com.github.KalyanaGreim.domain.entity.ItemPedido;
 import com.github.KalyanaGreim.domain.entity.Pedido;
+import com.github.KalyanaGreim.domain.enums.StatusPedido;
+import com.github.KalyanaGreim.rest.dto.AtualizacaoStatusPedidoDTO;
 import com.github.KalyanaGreim.rest.dto.InformacaoItemPedidoDTO;
 import com.github.KalyanaGreim.rest.dto.PedidoDTO;
 import com.github.KalyanaGreim.rest.dto.InformacoesPedidoDTO;
@@ -41,6 +43,13 @@ public class PedidoController {
                 .map( p -> converter(p) )
                 .orElseThrow(() ->
                         new ResponseStatusException(NOT_FOUND, "Pedido não encontrado."));
+    }
+
+    @PatchMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+        String novoStatus = dto.getNovoStatus();
+        service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
     }
 
     private InformacoesPedidoDTO converter(Pedido pedido){

@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b255f910-6ee5-42ad-b4af-befd8c09098f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/enums/StatusPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/exception/PedidoNaoEncontradoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/AtualizacaoStatusPedidoDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/ApplicationControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/ApplicationControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
       <list>
         <option value="AnnotationType" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,6 +82,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.KalyanaGreim.exception" />
       <recent name="com.github.KalyanaGreim.domain.enums" />
       <recent name="com.github.KalyanaGreim.rest.dto" />
     </key>
@@ -129,7 +132,7 @@
       <workItem from="1666739765264" duration="588000" />
       <workItem from="1666879244258" duration="4454000" />
       <workItem from="1666977456553" duration="5038000" />
-      <workItem from="1667221866538" duration="14752000" />
+      <workItem from="1667221866538" duration="16446000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciação do projeto">
       <created>1665704286332</created>
@@ -187,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667254806361</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cria status do pedido">
+      <created>1667255570872</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667255570872</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +213,7 @@
     <MESSAGE value="cria método para salvar pedido no banco de dados" />
     <MESSAGE value="tratando erros com Controller Advice" />
     <MESSAGE value="obtendo detalhes do pedido" />
-    <option name="LAST_COMMIT_MESSAGE" value="obtendo detalhes do pedido" />
+    <MESSAGE value="cria status do pedido" />
+    <option name="LAST_COMMIT_MESSAGE" value="cria status do pedido" />
   </component>
 </project>
