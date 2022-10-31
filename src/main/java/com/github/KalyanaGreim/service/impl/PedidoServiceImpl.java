@@ -4,6 +4,7 @@ import com.github.KalyanaGreim.domain.entity.Cliente;
 import com.github.KalyanaGreim.domain.entity.ItemPedido;
 import com.github.KalyanaGreim.domain.entity.Pedido;
 import com.github.KalyanaGreim.domain.entity.Produto;
+import com.github.KalyanaGreim.domain.enums.StatusPedido;
 import com.github.KalyanaGreim.domain.repository.Clientes;
 import com.github.KalyanaGreim.domain.repository.ItemsPedido;
 import com.github.KalyanaGreim.domain.repository.Pedidos;
@@ -42,6 +43,7 @@ public class PedidoServiceImpl implements PedidoService {
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
+        pedido.setStatus(StatusPedido.REALIZADO);
 
         List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         repository.save(pedido);

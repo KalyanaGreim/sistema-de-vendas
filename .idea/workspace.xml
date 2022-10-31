@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b255f910-6ee5-42ad-b4af-befd8c09098f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/InformacaoItemPedidoDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/InformacoesPedidoDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/enums/StatusPedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/repository/Pedidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/repository/Pedidos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/meu_schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,7 @@
         <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -81,6 +80,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.KalyanaGreim.domain.enums" />
       <recent name="com.github.KalyanaGreim.rest.dto" />
     </key>
   </component>
@@ -129,7 +129,7 @@
       <workItem from="1666739765264" duration="588000" />
       <workItem from="1666879244258" duration="4454000" />
       <workItem from="1666977456553" duration="5038000" />
-      <workItem from="1667221866538" duration="13912000" />
+      <workItem from="1667221866538" duration="14752000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciação do projeto">
       <created>1665704286332</created>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667242824911</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="obtendo detalhes do pedido">
+      <created>1667254806361</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667254806361</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,16 +202,7 @@
     <MESSAGE value="Implementando lombok" />
     <MESSAGE value="cria método para salvar pedido no banco de dados" />
     <MESSAGE value="tratando erros com Controller Advice" />
-    <option name="LAST_COMMIT_MESSAGE" value="tratando erros com Controller Advice" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="obtendo detalhes do pedido" />
+    <option name="LAST_COMMIT_MESSAGE" value="obtendo detalhes do pedido" />
   </component>
 </project>
