@@ -32,23 +32,29 @@ public class PedidoServiceImpl implements PedidoService {
 
     @Override
     @Transactional
-    public Pedido salvar(PedidoDTO dto) {
+    public Pedido salvar( PedidoDTO dto ) {
         Integer idCliente = dto.getCliente();
         Cliente cliente = clientesRepository
-                .findById(idCliente).orElseThrow(
-                        () -> new RegraNegocioException("Código de cliente inválido."));
+                .findById(idCliente)
+                .orElseThrow(() -> new RegraNegocioException("Código de cliente inválido."));
 
         Pedido pedido = new Pedido();
         pedido.setTotal(dto.getTotal());
         pedido.setDataPedido(LocalDate.now());
         pedido.setCliente(cliente);
 
-        List<ItemPedido> itemsPedidos = converterItems(pedido, dto.getItems());
+        List<ItemPedido> itemsPedido = converterItems(pedido, dto.getItems());
         repository.save(pedido);
-        itemsPedidoRepository.saveAll(itemsPedidos);
-        pedido.setItens(itemsPedidos);
+        itemsPedidoRepository.saveAll(itemsPedido);
+        pedido.setItens(itemsPedido);
         return pedido;
     }
+
+    @Override
+    public Optional<Pedido> obterPedidoCompleto(Integer id) {
+        return repository.findByIdFetchItens(id);
+    }
+
 
     private List<ItemPedido> converterItems(Pedido pedido, List<ItemPedidoDTO> items){
         if(items.isEmpty()){
