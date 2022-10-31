@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b255f910-6ee5-42ad-b4af-befd8c09098f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/exception/RegraNegocioException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/ApiErrors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/ApplicationControllerAdvice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +121,7 @@
       <workItem from="1666739765264" duration="588000" />
       <workItem from="1666879244258" duration="4454000" />
       <workItem from="1666977456553" duration="5038000" />
-      <workItem from="1667221866538" duration="6352000" />
+      <workItem from="1667221866538" duration="8477000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciação do projeto">
       <created>1665704286332</created>
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667225781547</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cria método para salvar pedido no banco de dados">
+      <created>1667237568483</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667237568483</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +178,7 @@
     <MESSAGE value="criação do controller e serviço de pedidos" />
     <MESSAGE value="criando DTOs" />
     <MESSAGE value="Implementando lombok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementando lombok" />
+    <MESSAGE value="cria método para salvar pedido no banco de dados" />
+    <option name="LAST_COMMIT_MESSAGE" value="cria método para salvar pedido no banco de dados" />
   </component>
 </project>
