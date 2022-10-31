@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b255f910-6ee5-42ad-b4af-befd8c09098f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/exception/RegraNegocioException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/Development.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/domain/entity/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/model/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/ItemPedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/ItemPedidoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/PedidoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/dto/PedidoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/rest/controller/PedidoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/PedidoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/KalyanaGreim/service/impl/PedidoServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +122,7 @@
       <workItem from="1666739765264" duration="588000" />
       <workItem from="1666879244258" duration="4454000" />
       <workItem from="1666977456553" duration="5038000" />
-      <workItem from="1667221866538" duration="3515000" />
+      <workItem from="1667221866538" duration="6352000" />
     </task>
     <task id="LOCAL-00001" summary="Iniciação do projeto">
       <created>1665704286332</created>
@@ -160,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667224674781</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementando lombok">
+      <created>1667225781547</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667225781547</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +171,7 @@
     <MESSAGE value="configuração de ambientes" />
     <MESSAGE value="criação do controller e serviço de pedidos" />
     <MESSAGE value="criando DTOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="criando DTOs" />
+    <MESSAGE value="Implementando lombok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementando lombok" />
   </component>
 </project>
