@@ -24,15 +24,16 @@ import static org.springframework.http.HttpStatus.NOT_FOUND;
 @RestController
 @RequestMapping("/api/pedidos")
 public class PedidoController {
+
     private PedidoService service;
 
-    public PedidoController(PedidoService service) {
-        this.service = service;
-    }
+   public PedidoController(PedidoService service){
+       this.service = service;
+   }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public Integer save(@RequestBody @Valid PedidoDTO dto){
+    public Integer save( @RequestBody @Valid PedidoDTO dto ){
         Pedido pedido = service.salvar(dto);
         return pedido.getId();
     }
@@ -48,7 +49,8 @@ public class PedidoController {
 
     @PatchMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void updateStatus(@PathVariable Integer id, @RequestBody AtualizacaoStatusPedidoDTO dto){
+    public void updateStatus(@PathVariable Integer id ,
+                             @RequestBody AtualizacaoStatusPedidoDTO dto){
         String novoStatus = dto.getNovoStatus();
         service.atualizaStatus(id, StatusPedido.valueOf(novoStatus));
     }

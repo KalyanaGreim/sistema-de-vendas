@@ -1,0 +1,22 @@
+
+E
+java:S3740?"/Provide the parametrized type for this generic.(“¢Éì
+s
+java:S1192"XDefine a constant instead of duplicating this literal "Cliente nÃ£o encontrado" 3 times.(•åüìüÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ğÿùº
+V
+java:S4684""@Replace this persistent entity with a simple POJO or DTO object.(½¬„ş
+J
+java:S2201."/The return value of "orElseThrow" must be used.(•åüìüÿÿÿÿ
+V
+java:S46844"@Replace this persistent entity with a simple POJO or DTO object.(®Ÿ…
+E
+java:S22019"/The return value of "orElseThrow" must be used.(µ‚íµ
+[
+java:S4684="@Replace this persistent entity with a simple POJO or DTO object.(äîúŒşÿÿÿÿ
+_
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ
+a
+java:S1128	"FRemove this unused import 'org.springframework.stereotype.Controller'.(øŠ—Öùÿÿÿÿ
+J
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ
